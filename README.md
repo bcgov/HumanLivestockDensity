@@ -1,6 +1,5 @@
 <div id="devex-badge"><a rel="Exploration" href="https://github.com/BCDevExchange/assets/blob/master/README.md"><img alt="Being designed and built, but in the lab. May change, disappear, or be buggy." style="border-width:0" src="https://assets.bcdevexchange.org/images/badges/exploration.svg" title="Being designed and built, but in the lab. May change, disappear, or be buggy." /></a></div>
 
-
 HumanLivestockDensity
 =====================
 
@@ -13,13 +12,6 @@ There are four core scripts that are required for the analysis, they need to be 
 -   03\_visualize.R
 -   04\_output.R
 
-#### Example
-
-This is a basic example which shows you how to solve a common problem:
-
-``` r
-## basic example code
-```
 
 ### Project Status
 
@@ -48,7 +40,5 @@ Please note that this project is released with a [Contributor Code of Conduct](C
     See the License for the specific language governing permissions and limitations under the License.
 
 ------------------------------------------------------------------------
-
-*This project was created using the [bcgovr](https://github.com/bcgov/bcgovr) package.*
 
 This repository is maintained by [ENVEcosystems](https://github.com/orgs/bcgov/teams/envecosystems/members).

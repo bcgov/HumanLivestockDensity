@@ -1,19 +1,29 @@
-<div id="devex-badge"><a rel="Exploration" href="https://github.com/BCDevExchange/assets/blob/master/README.md"><img alt="Being designed and built, but in the lab. May change, disappear, or be buggy." style="border-width:0" src="https://assets.bcdevexchange.org/images/badges/exploration.svg" title="Being designed and built, but in the lab. May change, disappear, or be buggy." /></a></div>
-
+<!-- Add a project state badge
+See https://github.com/BCDevExchange/Our-Project-Docs/blob/master/discussion/projectstates.md
+If you have bcgovr installed and you use RStudio, click the 'Insert BCDevex Badge' Addin. -->
 HumanLivestockDensity
 =====================
 
+This repository contains [R](https://www.r-project.org/) code that summarizes spatial & tabular census human population, and cows and sheep (livestock) data to assess Human Density and Livestock Density.
+
+Human density - people/km2 - estimated by Census Dissemination Block (DB)
+
+Livestock density - livestock/km2 - estimated by Census consolidated subdivisions
+
+Data
+----
+
+Census boundary [Census Boundary](https://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/bound-limit-2016-eng.cfm) Human Data [Human Data](https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/hlt-fst/pd-pl/comprehensive.cfm) Livestock Data [Cattle and Calves](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3210042401) [Sheep and Lambs](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3210042501)
+
 ### Usage
 
-There are four core scripts that are required for the analysis, they need to be run in order:
+There are five core scripts that are required for the analysis, they need to be run in order:
 
--   01\_clean.R
--   02\_analysis.R
--   03\_visualize.R
+-   01\_load\_Human.R
+-   01\_load\_Livestock.R
+-   02\_clean.R
+-   03\_analysis.R
 -   04\_output.R
-
-
-### Project Status
 
 ### Getting Help or Reporting an Issue
 
@@ -40,5 +50,7 @@ Please note that this project is released with a [Contributor Code of Conduct](C
     See the License for the specific language governing permissions and limitations under the License.
 
 ------------------------------------------------------------------------
+
+*This project was created using the [bcgovr](https://github.com/bcgov/bcgovr) package.*
 
 This repository is maintained by [ENVEcosystems](https://github.com/orgs/bcgov/teams/envecosystems/members).

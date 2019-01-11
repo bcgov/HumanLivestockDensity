@@ -17,24 +17,29 @@ See https://github.com/BCDevExchange/Our-Project-Docs/blob/master/discussion/pro
 If you have bcgovr installed and you use RStudio, click the 'Insert BCDevex Badge' Addin. -->
 
 # HumanLivestockDensity
+This repository contains [R](https://www.r-project.org/) code that summarizes spatial & tabular census human population, and cows and sheep (livestock) data to assess Human Density and Livestock Density. 
+
+Human density - people/km2 - estimated by Census Dissemination Block (DB)
+ 
+Livestock density - livestock/km2 - estimated by Census consolidated subdivisions
+
+## Data
+Census boundary 
+[Census Boundary](https://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/bound-limit-2016-eng.cfm)
+Human Data
+[Human Data](https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/hlt-fst/pd-pl/comprehensive.cfm)
+Livestock Data 
+[Cattle and Calves](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3210042401)
+[Sheep and Lambs](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3210042501)
 
 ### Usage
-There are four core scripts that are required for the analysis, they need to be run in order:
+There are five core scripts that are required for the analysis, they need to be run in order:
 
-- 01_clean.R
-- 02_analysis.R
-- 03_visualize.R
+- 01_load_Human.R
+- 01_load_Livestock.R
+- 02_clean.R
+- 03_analysis.R
 - 04_output.R
-
-#### Example
-
-This is a basic example which shows you how to solve a common problem:
-
-```{r example}
-## basic example code
-```
-
-### Project Status
 
 ### Getting Help or Reporting an Issue
 

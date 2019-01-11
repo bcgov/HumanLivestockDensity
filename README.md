@@ -13,7 +13,13 @@ Livestock density - livestock/km2 - estimated by Census consolidated subdivision
 Data
 ----
 
-Census boundary [Census Boundary](https://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/bound-limit-2016-eng.cfm) Human Data [Human Data](https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/hlt-fst/pd-pl/comprehensive.cfm) Livestock Data [Cattle and Calves](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3210042401) [Sheep and Lambs](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3210042501)
+Census boundary [Census Boundary](https://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/bound-limit-2016-eng.cfm)
+
+Census Data [Human Data](https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/hlt-fst/pd-pl/comprehensive.cfm)
+
+Livestock Data [Cattle and Calves](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3210042401)
+
+[Sheep and Lambs](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3210042501)
 
 ### Usage
 

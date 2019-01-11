@@ -24,16 +24,12 @@ Human density - people/km2 - estimated by Census Dissemination Block (DB)
 Livestock density - livestock/km2 - estimated by Census consolidated subdivisions
 
 ## Data
-Census boundary 
 [Census Boundary](https://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/bound-limit-2016-eng.cfm)
 
-Census Data
-[Human Data](https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/hlt-fst/pd-pl/comprehensive.cfm)
+[Census Data](https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/hlt-fst/pd-pl/comprehensive.cfm)
 
-Livestock Data 
-[Cattle and Calves](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3210042401)
-
-[Sheep and Lambs](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3210042501)
+Livestock Data - 
+[Cattle and Calves](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3210042401) & [Sheep and Lambs](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3210042501)
 
 ### Usage
 There are five core scripts that are required for the analysis, they need to be run in order:

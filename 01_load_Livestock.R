@@ -27,17 +27,23 @@ CensusConSubs_LCCproj<-st_read(dsn=file.path(DataDir,'Livestock'), stringsAsFact
 
 #Transform from Stats Canada Lambert: +proj=lcc +lat_1=49 +lat_2=77 +lat_0=63.390675 +lon_0=-91.86666666666666 +x_0=6200000 +y_0=3000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs
 #To BC Lambert:  +proj=aea +lat_1=50 +lat_2=58.5 +lat_0=45 +lon_0=-126 +x_0=1000000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs
-CensusConSubs = st_transform(CensusConSubs_LCCproj, "+proj=aea +lat_1=50 +lat_2=58.5 +lat_0=45 +lon_0=-126 +x_0=1000000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs")
+CensusConSubs <-
+                              st_transform(CensusConSubs_LCCproj, "+proj=aea +lat_1=50 +lat_2=58.5 +lat_0=45 +lon_0=-126
+                             +x_0=1000000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs") %>%
+                              filter(PRUID == 59)
 
-#
-Livestock Data
+#Livestock Data
 #Cattle and Calves - https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3210042401
 #Sheep and Lambs - https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3210042501
 
 #Read in sheep and cows and subset to Total amounts
-Sheep <- data.frame(read.csv(header=TRUE, file=file.path(DataDir,'Livestock/32100425-eng/32100425.csv'), strip.white=TRUE, ))
+Sheep <- data.frame(read.csv(header=TRUE, file=file.path(DataDir,'Livestock/32100425-eng/32100425.csv'), strip.white=TRUE, )) %>%
+  filter(str_detect(GEO, 'British Columbia') & REF_DATE==2016)
+
 TotalSheep<-subset.data.frame(Sheep, Sheep.and.lambs=='Total sheep and lambs' & Unit.of.measure=='Number of animals' & REF_DATE==2016)
 
-Cows <- data.frame(read.csv(header=TRUE, file=file.path(DataDir,'Livestock/32100424-eng/32100424.csv'), strip.white=TRUE, ))
+Cows <- data.frame(read.csv(header=TRUE, file=file.path(DataDir,'Livestock/32100424-eng/32100424.csv'), strip.white=TRUE, )) %>%
+  filter(str_detect(GEO, 'British Columbia') & REF_DATE==2016)
+
 TotalCows<-subset.data.frame(Cows, Cattle.and.calves=='Total cows' & Unit.of.measure=='Number of animals' & REF_DATE==2016)
 
